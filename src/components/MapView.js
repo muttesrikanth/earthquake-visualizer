@@ -21,7 +21,13 @@ const MapView = ({filters, earthquakes }) => {
   }
   
   return(
-    <MapContainer center={[20, 0]} zoom={2} className="MapContainer" >
+    <MapContainer center={[20, 0]} zoom={2} 
+    maxBounds={[
+      [-90, -180],   // Southwest corner
+      [90, 180],     // Northeast corner
+    ]}               // Restrict panning
+    maxBoundsViscosity={1.0} 
+    className="MapContainer" >
       <TileLayer
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'

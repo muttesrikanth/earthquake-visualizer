@@ -1,0 +1,56 @@
+@keyframes earthquake {
+  0%{ transform: translateX(0)
+  }
+  25%{
+    transform: translateX(-10px)
+  }
+  50%{
+    transform: translateX(10px)
+  }
+  75%{
+    transform: translateX(-10px)
+  }
+  100%{
+     transform: translateX(0)
+  }
+  
+}
+.earthquake{
+  animation: earthquake 500ms ease-in-out infinite;
+}
+.MapContainer{
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+}
+.filter-panel{
+  position: absolute;
+  z-index: 100;
+  width: 240px;
+  right: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.167);
+  animation: sri 500ms ease-in-out;
+}
+input{
+  border-radius: 10px;
+  padding-left: 8px;
+}
+.filter-Button{
+  width: 55px;
+  margin: 10px 10px 0 0;
+  font-weight: 700;
+}
+@keyframes sri {
+  from {
+    opacity: 0;
+    rotate: 300deg;
+    scale: 0;
+  }
+  to {
+    opacity: 1;
+    rotate: 0deg;
+    scale: 1;
+  }
+}

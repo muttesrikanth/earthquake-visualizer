@@ -1,6 +1,33 @@
-# Getting Started with Create React App
+# 🌍 Earthquake Visualizer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+An interactive web application to visualize recent earthquake activity worldwide. Built using React, react-leaflet for mapping, and the USGS Earthquake API, this project helps geography enthusiasts and students understand seismic patterns in a user-friendly way.
+
+## 🚀 Features
+### 🌎 Interactive Map:
+Displays earthquake locations with real-time data.
+### 📊 Details at a Glance: 
+Shows earthquake magnitude, location, and time.
+### 🔍 Filter by Magnitude, Time & Region: 
+Focus on earthquakes above a certain magnitude. Earthquakes happen on time period, filter by region
+### 📱 Responsive Design: 
+Works seamlessly on desktop and mobile devices.
+### ⚠️ Error Handling: 
+Provides user-friendly messages for network errors or no data.
+## 🛠️ Technologies Used
+### Framework: React
+### Styling: Tailwind CSS
+### Mapping Library: react-leaflet
+### API: USGS Earthquake API
+## 📥 Getting Started
+Prerequisites
+Node.js installed on your system.
+Basic knowledge of React and npm/yarn commands
+## 🗺️ How It Works
+### Data Fetching: The app fetches earthquake data from the USGS Earthquake API.
+### Mapping: Earthquakes are plotted as markers on an interactive Leaflet map.
+### Details: Clicking a marker shows earthquake details (e.g., magnitude, time).
+
+
 
 ## Available Scripts
 

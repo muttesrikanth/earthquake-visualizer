@@ -33,7 +33,7 @@
   background-color: rgba(0, 0, 0, 0.167);
   animation: sri 500ms ease-in-out;
 }
-input{
+input,select{
   border-radius: 10px;
   padding-left: 8px;
 }
